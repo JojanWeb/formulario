@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <div>
+      <label for="name">Ingrese su nombre:</label>
+      <input type="text" id="name" required autofocus>
+    </div>
+    <br>
+    <div>
+      <label for="edad">Ingrese su edad:</label>
+      <input type="number" id="edad" min="0" max="100">
+    </div>
+    <br>
+    <div>
+      <label for="numero">Ingrese su numero:</label>
+      <input name="numero" id="numero" pattern="[0-9]{0,10}">
+    </div>
+    <br>
+    <div>
+      <label for="correo">Ingrese su correo</label>
+      <input type="email" name="correo" id="correo" required>
+    </div>
+    <br>
+    <div>
+      <label for="ciudad">Seleccione su ciudad</label>
+      <select name="ciudad" id="ciudad">
+        <option value="1" name="ciudad">Bucaramanga</option>
+        <option value="2" name="ciudad">Girón</option>
+        <option value="3" name="ciudad">Floridablanca</option>
+        <option value="4" name="ciudad">Piedecuesta</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <input type="radio" name="pref" id="html">
+      <label for="html">HTML</label>
+
+      <input type="radio" name="pref" id="js">
+      <label for="js">JS</label>
+    
+      <input type="radio" name="pref" id="sql">
+      <label for="sql">SQL</label>
+    
+      <input type="radio" name="pref" id="python">
+      <label for="python">PYTHON</label>
+    </div>
+      
+    <div>
+      <button type="submit">Guardar</button>
+    </div>
+  </form>
+</body>
+</html>
