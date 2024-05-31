@@ -16,7 +16,7 @@
   <form action="controlador" method="post" autocomplete="off">
     <div>
       <label for="name">Ingrese su nombre:</label>
-      <input type="text" id="name" required autofocus pattern="[A-Za-z ]{10,50}">
+      <input type="text" id="name" required autofocus pattern="[A-Za-z ]{3,50}">
     </div>
     <br>
     <div>
@@ -31,7 +31,7 @@
     <br>
     <div>
       <label for="correo">Ingrese su correo</label>
-      <input type="email" name="correo" id="correo" pattern="[A-Za-z0-9]+@[A-Za-z]+.com" required>
+      <input type="email" name="correo" id="correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
     </div>
     <br>
     <div>
@@ -86,9 +86,3 @@
   </form>
 </body>
 </html>
-
-<form>
-  <label for="email_input">Ingresa tu correo electrónico:</label><br>
-  <input type="email" id="email_input" name="email_input" required><br>
-  <input type="submit" value="Enviar">
-</form>
